@@ -1,0 +1,14 @@
+- description: view all running containers
+  command: "docker ps"
+
+- description: start a container and get a shell
+  command: "docker exec -it <mycontainer> bash"
+
+- description: stop all running containers
+  command: docker stop $(docker ps -aq)
+
+- description: delete all containers
+  command: docker rm $(docker ps -aq)
+
+- description: delete all images
+  command: docker rmi $(docker images -q)

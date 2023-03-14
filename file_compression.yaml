@@ -1,0 +1,2 @@
+- description: unzip .gz file
+  command: gzip -d file.gz
